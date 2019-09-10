@@ -1,0 +1,48 @@
+https://www.kaggle.com/c/airbnb-recruiting-new-user-bookings
+
+------------------------
+en le dataframe seccion:
+
+-la columna de action_detail, sustituir los valores por la frecuencia de ellos los nan por 'otro'
+
+-en la columna de action_Type agrupar los que menos hay con otros o analizar un tipo de agrupacion a ver que vuelta los nan por 'otro'
+
+-divace_type, agrupar por tipo, creo que esta en pc, mac y otro.
+
+- action, pudiera sustituir por la frecuencia y agrupar un poco a ver que vuelta
+
+- columna secs_elapsed, susutituir los nan por la media, ver si se puede sacar la media por usuario haciendo un groupby por id, a ver que sale... es mas espesifico por usuario que por la media del total
+
+
+hcer un nuevo dataframe von los las columnas de lapse y lapse_mean en los que lapse es nan para ver si los nan son en todos los usuarios o un usuario tiene unos nan y otros no
+
+al final viendo esto ultimo lo qeu vi es qeu los nan estan solo en id unitarion, osea, qeu se han conectado una sol avez por lo que tuve qeu haer la media de toda la columna para eliminarnos
+
+------------------------
+dataframe user:
+
+
+-columan gender, hacer dummies
+
+-columna signup_method hacer dummies
+columna leguage agrupar por y hacer dummies
+
+- la columna date_account_created restarla con la columna date_first_booking y hacer dummies con pnegativo (significa qeu primero reservo y despues se hizo el acounts) positivo (primero se hizo el acounts y despues hizo su primera reserva) y los qeu son nan le pngo solo 'Unkoun'
+
+- con la edad hacer el promedio de edad o analizar la edad en funcion de los hoteles en que han estado y ponerselas
+- otra idea super importante, con la tabla de age and gender predecir la edad en dependencia de los datos con otro modelo(varios paises qeu ha reservado y el genero en caso qeu lo tenga, predecir la edad) y meterla en la jugada esta.
+- para la edad analizar bien la tabla de edad y genero porque puedo hacer hasta histogramas con la publacion con intervalos de edad y por genero y sacar la fecha de alli(con un groupby por genero)
+- puedo ver la tabla de age_gender para ajustar un kernel gauciano para predecir la edad....
+
+- a la columna first_affiliate_tracked ponerle unkown a los nan
+
+
+despues de tener todas las tablas limpias sin nan, hacer el merge de la tabla seccion y usuario left join por id y id_user
+
+--------
+ver un poco de correlacion de las variables a ver que tal.....
+
+
+
+
+
