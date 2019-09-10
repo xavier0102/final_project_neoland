@@ -8,10 +8,14 @@ Hay 12 posibles resultados del país de destino: 'EE. UU.', 'FR', 'CA', 'GB', 'E
 Descripciones de archivo
 
 train_users.csv  : el conjunto de formación de usuarios
+
 test_users.csv : el conjunto de prueba de usuarios
 id: id de usuario
+
 date_account_created: la fecha de creación de la cuenta
-timestamp_first_active: marca de tiempo de la primera actividad, tenga en cuenta que puede ser anterior a date_account_created o date_first_booking porque un usuario puede buscar antes de registrarse
+
+timestamp_first_active: marca de tiempo de la primera 
+actividad, tenga en cuenta que puede ser anterior a date_account_created o date_first_booking porque un usuario puede buscar antes de registrarse
 date_first_booking: fecha de la primera reserva
 género
 años
